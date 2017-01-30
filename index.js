@@ -6,7 +6,7 @@ var log = require('nutty-log');
  var file = function(p, opt)
  {
    //Check the options
-   if(typeof opt ==! 'object'){ var opt = {}; }
+   if(typeof opt !== 'object'){ var opt = {}; }
 
    //Save the encoding
    this._encoding = (typeof opt.encoding === 'string') ? opt.encoding : 'utf8';
