@@ -44,5 +44,8 @@ Object.keys(log.levels).forEach(function(level)
  //Close the file
  file.prototype.end = function(){ this._stream.end(); };
 
+ //End alias
+ file.prototype.close = function(){ this._stream.end(); };
+
  //Exports to node
  module.exports = file;
