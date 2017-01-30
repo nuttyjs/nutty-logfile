@@ -21,7 +21,10 @@ var log = require('nutty-log');
    return this;
  };
 
- //Add a log message to file
+//Get the file path
+file.prototype.path = function(){ return this._path; };
+
+//Add a log message to file
 Object.keys(log.levels).forEach(function(level)
 {
   //Add the level message
