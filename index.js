@@ -12,6 +12,9 @@ var log = require('nutty-log');
    //Save the encoding
    this._encoding = (typeof opt.encoding === 'string') ? opt.encoding : 'utf8';
 
+   //Check for print in console
+   this._console = (typeof opt.console === 'boolean') ? opt.console : false;
+
    //Save the file path
    this._path = path.resolve(process.cwd(), p);
 
@@ -32,7 +35,7 @@ Object.keys(log.levels).forEach(function(level)
   file.prototype[level] = function(text)
   {
     //Get the message log
-    var message = log.message(level, text);
+    var message = (this._console === true) ? log[level](text) : log.message(level, text);
 
     //Save the log file
     this._stream.write(message);
