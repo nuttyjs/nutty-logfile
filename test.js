@@ -2,7 +2,7 @@
 var logfile = require('./index.js');
 
 //Get the file
-var file = new logfile('./log.txt');
+var file = new logfile('./log.txt', { console: true });
 
 //Print the file path
 console.log(file.path());
