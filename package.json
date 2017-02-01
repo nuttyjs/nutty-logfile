@@ -1,6 +1,6 @@
 {
   "name": "nutty-logfile",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Print logs to a file using streams",
   "main": "index.js",
   "repository": { "type": "git", "url": "https://github.com/nuttyjs/nutty-logfile.git" },
