@@ -25,6 +25,7 @@ var logfile = require('nutty-logfile');
 Returns a new logfile object to print log messages to a file placed in `path`. The optionally `options` argument must be an object with the following keys:
 
 - `encoding`: encoding. Default is `utf8`.  
+- `console`: print also messages in console. Default is `false`.
 
 ```javascript
 var file = new logfile('/path/to/my/file.log');
