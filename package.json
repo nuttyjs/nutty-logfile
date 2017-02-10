@@ -1,6 +1,6 @@
 {
   "name": "nutty-logfile",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Print logs to a file using streams",
   "main": "index.js",
   "repository": { "type": "git", "url": "https://github.com/nuttyjs/nutty-logfile.git" },
@@ -8,5 +8,5 @@
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "homepage": "https://github.com/nuttyjs/nutty-logfile",
   "license": "MIT",
-  "dependencies": { "nutty-log": "0.0.6" }
+  "dependencies": { "nutty-log": "0.0.7" }
 }
